@@ -1,4 +1,4 @@
-package com.example.week5vp.Soal1.ui.screen
+package com.example.vpweek5.Soal1.ui.screen
 
 import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.Arrangement
@@ -36,8 +36,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.week5vp.Soal1.model.Expense
-import com.example.week5vp.Soal1.viewmodel.ExpenseViewModel
+import com.example.vpweek5.Soal1.model.Expense
+import com.example.vpweek5.Soal1.viewmodel.ExpenseViewModel
 
 private fun formatRupiah(price: Int): String {
     return "Rp " + String.format("%,d", price).replace(',', '.')
@@ -53,6 +53,7 @@ fun ExpenseScreen(viewModel: ExpenseViewModel = viewModel()) {
     var editing by remember { mutableStateOf<Expense?>(null) }
     var editText by remember { mutableStateOf("") }
     var editError by remember { mutableStateOf(false) }
+    val total = viewModel.grandTotal(spending)
 
     Column(
         modifier = Modifier
@@ -60,7 +61,7 @@ fun ExpenseScreen(viewModel: ExpenseViewModel = viewModel()) {
             .padding(top = 50.dp, start = 14.dp, end = 14.dp)
     ) {
         Text("Expenses", fontSize = 30.sp, fontWeight = FontWeight.Bold)
-        Text("Total Expenses : ${formatRupiah(viewModel.grandTotal())}", fontSize = 20.sp)
+        Text("Total Expenses : ${formatRupiah(total)}", fontSize = 20.sp)
         Spacer(modifier = Modifier.height(16.dp))
 
         OutlinedTextField(

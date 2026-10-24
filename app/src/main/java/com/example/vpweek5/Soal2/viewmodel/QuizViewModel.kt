@@ -1,8 +1,8 @@
-package com.example.practicerabu.q2.viewmodel
+package com.example.vpweek5.Soal2.viewmodel
 
 import androidx.lifecycle.ViewModel
-import com.example.week5vp.Soal2.model.AnswerHistory
-import com.example.week5vp.Soal2.model.Question
+import com.example.vpweek5.Soal2.model.AnswerHistory
+import com.example.vpweek5.Soal2.model.Question
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow

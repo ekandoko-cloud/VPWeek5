@@ -1,4 +1,4 @@
-package com.example.week5vp.Soal2.ui.screen
+package com.example.vpweek5.Soal2.ui.screen
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -19,7 +19,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.week5vp.Soal2.model.AnswerHistory
+import com.example.vpweek5.Soal2.model.AnswerHistory
 
 @Composable
 fun ScoreScreen(

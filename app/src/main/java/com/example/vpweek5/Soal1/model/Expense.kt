@@ -1,4 +1,4 @@
-package com.example.week5vp.Soal1.model
+package com.example.vpweek5.Soal1.model
 
 data class Expense(
     val id: Int,

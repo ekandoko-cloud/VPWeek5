@@ -1,4 +1,4 @@
-package com.example.week5vp.Soal2.ui.screen
+package com.example.vpweek5.Soal2.ui.screen
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -6,7 +6,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.practicerabu.q2.viewmodel.QuizViewModel
+import com.example.vpweek5.Soal2.viewmodel.QuizViewModel
 
 @Composable
 fun StateScreen(

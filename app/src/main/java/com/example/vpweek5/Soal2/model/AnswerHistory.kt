@@ -1,4 +1,4 @@
-package com.example.week5vp.Soal2.model
+package com.example.vpweek5.Soal2.model
 
 data class AnswerHistory(
     val question: Question,

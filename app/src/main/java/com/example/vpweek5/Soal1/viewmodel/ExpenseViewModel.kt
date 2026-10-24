@@ -1,7 +1,7 @@
-package com.example.week5vp.Soal1.viewmodel
+package com.example.vpweek5.Soal1.viewmodel
 
 import androidx.lifecycle.ViewModel
-import com.example.week5vp.Soal1.model.Expense
+import com.example.vpweek5.Soal1.model.Expense
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -20,8 +20,8 @@ class ExpenseViewModel : ViewModel() {
     val errorPrice: StateFlow<String?> = _errorPrice.asStateFlow()
     private var counter = 1
 
-    fun grandTotal(): Int {
-        return _spending.value.sumOf { it.price }
+    fun grandTotal(list: List<Expense>): Int {
+        return list.sumOf { it.price }
     }
 
     fun onNameChange(text: String) {

@@ -1,4 +1,4 @@
-package com.example.week5vp.Soal2.ui.screen
+package com.example.vpweek5.Soal2.ui.screen
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
